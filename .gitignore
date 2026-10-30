@@ -1,0 +1,10 @@
+backups/*
+!backups/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+*.tmp
+.env
+.env.*
+!.env.example
