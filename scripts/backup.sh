@@ -62,9 +62,7 @@ tar -tzf "$TMP_ARCHIVE" >/dev/null ||
 
 mv -- "$TMP_ARCHIVE" "$ARCHIVE"
 
-sha256sum "$ARCHIVE" | awk '{print $1}' \
-    > "${ARCHIVE}.sha256"
-
+sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
 log "Backup created: $ARCHIVE"
 log "SHA-256 checksum saved"
 
